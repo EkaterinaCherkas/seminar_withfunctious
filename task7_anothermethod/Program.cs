@@ -4,10 +4,11 @@
  Console.Clear();
  Console.Write("Введите элементы массива через пробел: ");
  string elements = Console.ReadLine();
- int[] baseArray = GetArrayFromString(elements);
+ int[] baseArray = GetArrayFromString(elements);// функция гетэрэй. на вход принимает строку возращает массив целых чисел
+ // функция переводит в строку элемент в массив чисел и это  массив записывает в basearray
  Console.Write("Введите число: ");
  int n = int.Parse(Console.ReadLine());
- if (FindElement(baseArray, n)){
+ if (FindElement(baseArray, n)){// в этой функции буул и можно сразу ее указать в иф,выведет в зависимости от того что вернет
     Console.WriteLine("Да");
  }
  else{
